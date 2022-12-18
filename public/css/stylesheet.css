@@ -1,0 +1,12 @@
+.root {
+    --cadmium-orange: #f7934cff;
+    --tenne-tawny: #cc5803ff;
+    --black-chocolate: #1f1300ff;
+    --android-green: #b6c649ff;
+    --white: #ffffffff;
+    font-family: 'Syne Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+}
