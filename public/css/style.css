@@ -1,13 +1,15 @@
 
 :root {
-  --main-bg-color: #1c0118;
+  --main-bg-color: #090008;
   --main-text-color: #6bd425;
   --alt-text-color: #618b25;
-  --alt-color: #42113c;
-  --alt-bg-color: #370926;
+  --alt-color: #040104;
+  --alt-bg-color: #0e0009;
 }
 
 body{
+  font-family: 'VT323', monospace;
+  font-size: large;
   background-color: var(--main-bg-color);
   color: var(--alt-text-color);
 }
@@ -15,7 +17,11 @@ header {
   background-color: var(--alt-bg-color);
   color: var(--main-text-color);
 }
+p{
+  font-size: larger;
+}
  a{
+  font-size: xx-large;
   color: var(--main-text-color);
   text-decoration: none;
  }
