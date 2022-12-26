@@ -1,24 +1,50 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+
+:root {
+  --main-bg-color: #1c0118;
+  --main-text-color: #6bd425;
+  --alt-text-color: #618b25;
+  --alt-color: #42113c;
+  --alt-bg-color: #370926;
 }
 
-.no-button {
+body{
+  background-color: var(--main-bg-color);
+  color: var(--alt-text-color);
+}
+header {
+  background-color: var(--alt-bg-color);
+  color: var(--main-text-color);
+}
+ a{
+  color: var(--main-text-color);
+  text-decoration: none;
+ }
+ A:hover {
+  text-shadow: 1px 1px 2px pink;
+  text-decoration: none;
+  color: var(--main-text-color);
+ }
+
+header, .project:not(:last-child) {
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.btn.btn-danger {
+  background-color: var(--alt-color);
+  border-color: var(--alt-text-color);
+  color: var(--alt-text-color);
+}
+ .no-button {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: var(--main-text-color);
   text-decoration: none;
   font-size: 100%;
 }
 
 .no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+  color: var(--alt-text-color);
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
-}
