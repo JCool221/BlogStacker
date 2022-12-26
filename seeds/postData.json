@@ -1,14 +1,14 @@
 [
   {
-    "title": "Music Near Me",
-    "content": "A mobile app that will send you notifications whenever a concert is playing in your area."
+    "title": "Creating a CRUD template",
+    "content": "Creating a CRUD app is mentioned regurlarly as a one of the must-haves for any tech portfolio.  Creating a template for it allows for it to be recreated over and over again as necessary since it's a pretty standard system"
   },
   {
-    "title": "The Ultimate Tech Quiz",
-    "content": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
+    "title": "OK I'm really starting to like CSS",
+    "content": "I'm starting to really enjoy it.  Seeing something on another site and then trying to recreate it is way more fun than I would have thought."
   },
   {
-    "title": "Roll 'Em Up",
-    "content": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
+    "title": "Using Code knowledge outside of class",
+    "content": "I ran across some cool health bars on some Warhammer models in Tabletop Simulator.  I loaded up the script and of course it's not in JavaScript, but I was able to recognize it as LUA and could start to rubber duck what was happeneing and now I can edit and add that script to my models.  I want to make a plug in that will add it as necessary."
   }
 ]

@@ -26,20 +26,33 @@ p{
   text-decoration: none;
  }
  A:hover {
-  text-shadow: 1px 1px 2px pink;
+  text-shadow: 1px 1px 2px var(--alt-text-color);
   text-decoration: none;
-  color: var(--main-text-color);
+  color: var(--alt-text-color);
  }
 
 header, .project:not(:last-child) {
   border-bottom: 1px solid var(--main-text-color);
 }
 
+form .form-input {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
 .btn.btn-danger {
   background-color: var(--alt-color);
   border-color: var(--alt-text-color);
   color: var(--alt-text-color);
+  font-weight: bold;
 }
+
+.btn.btn-danger:hover {
+  background-color: var(--alt-bg-color);
+  text-shadow: 1px 1px 2px var(--alt-text-color);
+  box-shadow: 1px 1px 2px var(--alt-text-color);
+}
+
  .no-button {
   background: none;
   border: none;
@@ -47,7 +60,7 @@ header, .project:not(:last-child) {
   cursor: pointer;
   color: var(--main-text-color);
   text-decoration: none;
-  font-size: 100%;
+  font-size:xx-large;
 }
 
 .no-button:hover {
