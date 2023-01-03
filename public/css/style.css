@@ -15,14 +15,14 @@ body{
 }
 header {
   background-color: var(--alt-bg-color);
-  color: var(--main-text-color);
+  color: var(--alt-text-color);
 }
 p{
   font-size: larger;
 }
  a{
   font-size: xx-large;
-  color: var(--main-text-color);
+  color: var(--alt-text-color);
   text-decoration: none;
  }
  A:hover {
@@ -54,6 +54,7 @@ form .form-input {
 }
 
  .no-button {
+  font-family: 'VT323', monospace;
   background: none;
   border: none;
   padding: 0;
