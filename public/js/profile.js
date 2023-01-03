@@ -2,7 +2,6 @@ const newFormHandler = async (event) => {
   event.preventDefault();
 
   const title = document.querySelector('#project-name').value.trim();
-  // const needed_funding = document.querySelector('#project-funding').value.trim(); needed_funding, && needed_funding
   const content = document.querySelector('#project-desc').value.trim();
 
   if (title && content) {
@@ -13,7 +12,7 @@ const newFormHandler = async (event) => {
         'Content-Type': 'application/json',
       },
     });
-
+    
     if (response.ok) {
       document.location.replace('/profile');
     } else {
