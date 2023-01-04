@@ -4,53 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anybody:wght@200&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/halves.css">
     <title>BlogStacker!</title>
 </head>
-<body>
-    <div class="container">
-        <main class="left">
-            <header class="navbar">
-                <h1>BlogStacker!</h1>
-                <nav>
-        {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-                </nav>
-            </header>
-            {{{body}}}
-        </main>
-        <main class="right">
-            <ul class="post-container">
-                {{#each posts as |post| }}
-                <li class="posts" data-num="{{@index}}">
-                    <h2 class="post-title">
-                        <a href="/posts/{{post.id}}">{{post.title}}</a>
-                    </h2>
-                    <p class="post-text">
-                        {{post.content}}
-                    </p>
-                    <p class="post-content">Created by {{post.user.name}} on {{format_date post.date_created}} </p>
-                </li>
-                {{/each}}
-                {{!-- <li class="posts" data-num="0">
-                    <h2 class="post-title">
-                        title
-                    </h2>
-                    <p class="post-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse et voluptate deserunt, reprehenderit adipisci odit ex ad in illum facilis nesciunt officiis, eius, vero doloremque dolorum magnam corrupti laborum aperiam.
-                    </p>
-                    <p class="post-text">created by [user] on [date]</p>
-                    </li>
-                <li class="posts" data-num="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur placeat recusandae sint distinctio ducimus ex aperiam quae iusto! Dolor consequatur ducimus ab similique sequi dolores nobis nihil cum ex adipisci?</li>
-                <li class="posts" data-num="2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio atque, esse repudiandae quos fugit nam officiis fuga reprehenderit nesciunt veniam facere architecto nostrum hic eveniet quibusdam vitae praesentium accusamus ut!</li>
-                <li class="posts" data-num="3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, nulla dignissimos! Odio voluptatibus laudantium itaque ab ducimus, ipsum atque corporis suscipit modi? Doloremque ab reiciendis et explicabo tempore ratione quis.</li>
-                <li class="posts" data-num="4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias sed nisi, optio accusamus harum necessitatibus delectus sint aspernatur quos blanditiis, doloremque temporibus quis commodi odit voluptatibus! Quibusdam error soluta alias!</li> --}}
-            </ul>
-        </main>
-    </div>
-</body>
+            {{{ body }}}
 </html>

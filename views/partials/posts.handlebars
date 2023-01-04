@@ -1,0 +1,15 @@
+<main class="right">
+    <ul class="post-container">
+        {{#each posts as |post| }}
+        <li class="posts" data-num="{{@index}}">
+            <h2 class="post-title">
+                <a href="/posts/{{post.id}}">{{post.title}}</a>
+            </h2>
+            <p class="post-text">
+                {{post.content}}
+            </p>
+            <p class="post-content">Created by {{post.user.name}} on {{format_date post.date_created}} </p>
+        </li>
+        {{/each}}
+    </ul>
+</main>

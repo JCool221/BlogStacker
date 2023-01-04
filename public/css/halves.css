@@ -9,7 +9,11 @@
     overflow: hidden;
 }
 
+.title{
+    font-family: 'Pacifico', cursive;}
+
 body {
+    font-family: 'Anybody', cursive;
     height: 100vh;
     width: 100vw;
     background-color: var(--smoky-black);
@@ -54,7 +58,6 @@ a{
     text-decoration: none;
     color: var(--smoky-black);
 }    
-
 h2{
     height: 50%;
     width: 50%;
@@ -125,6 +128,7 @@ input {
 }
 
 .post-title {
+    font-family: 'Pacifico', cursive;
     font-size: x-large;
     height: fit-content;
     width: fit-content;

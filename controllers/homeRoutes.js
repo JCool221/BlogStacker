@@ -6,6 +6,8 @@ router.get('/', async (req, res) => {
   try {
     // Get all posts and JOIN with user data
     const postData = await Post.findAll({
+      // if posts.length>5find the oldest date and remove it, so how do i do that
+      // syntax is in sequelize, order by min(age) and limit:5
       include: [
         {
           model: User,
@@ -16,7 +18,6 @@ router.get('/', async (req, res) => {
 
     // Serialize data so the template can read it
     const posts = postData.map((post) => post.get({ plain: true }));
-    // if posts.length>5find the oldest date and remove it, so how do i do that
     // Pass serialized data and session flag into template
     res.render('homepage', { 
       posts, 
