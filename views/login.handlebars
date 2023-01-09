@@ -2,15 +2,15 @@
     <div class="container">
         <main class="left">
 {{> header }}
-          
             <div class="form-container">
-                <form action="login" method="post">
+                <form class="login-form" action="login" method="post">
                     <label for="email">Enter Your Email</label>
                     <input type="text" name="email" id="email">
                     <label for="password">Enter Your Password</label>
                     <input type="text" name="password" id="password">
+                    <button id='loginButton' class="no-button" type="submit">Login</button>
                 </form>
-                <form action="signup" method="post">
+                <form class="signup-form" action="signup" method="post">
                     <label for="username">Create a Username</label>
                     <input type="text" name="username" id="username">
                     <label for="email">Signup With Email</label>
@@ -19,8 +19,8 @@
                     <input type="text" name="signuppassword" id="password">
                 </form>
             </div>
-
             </main>
+            <script src="./js/login.js"></script>
 {{> posts }}
     </div>
 </body>
