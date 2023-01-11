@@ -2,44 +2,27 @@
   <div class="container">
     <main class="left">
 {{>header}}
-<div class="form-container">
-    <h3>Create a New Post:</h3>
+<div class="form-container profile-form">
     <form class="form new-project-form">
-      <div class="form-group">
+    {{!-- <h3>Create a New Post:</h3> --}}
         <label for="project-name">Title:</label>
         <input class="form-input" type="text" id="project-name" name="project-name" />
-      </div>
-      <div class="form-group">
+
+
         <label for="project-desc">What's on your mind?</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
-      </div>
-      <div class="form-group">
+        <textarea class="form-input" id="project-desc" name="project-desc" autocomplete="off"></textarea>
+
         <button type="submit" class="no-button">Create</button>
-      </div>
     </form>
 </div>
   </main>
   <main class="right">
-
-  {{#if Posts.length}}
-{{log 'this is a post'}}
-  <div class="project-list">
-    <h3>Recent Posts:</h3>
-
-    {{#each Posts as |Post|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/posts/{{Post.id}}">{{Post.title}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{Post.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
-  {{/if}}
-  </div>
+    <ul class="post-container">
+      <li class="posts" data-num="1">hello world</li>
+    </ul>
   </main>
 
 <script src="./js/profile.js"></script>
+<script src="./js/logout.js"></script>
   </div>
 </body>

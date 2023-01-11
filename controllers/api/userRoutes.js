@@ -43,6 +43,7 @@ console.log(validPassword)
       req.session.logged_in = true;
       
       res.json({ user: userData, message: 'You are now logged in!' });
+      res.redirect('/profile');
     });
 
   } catch (err) {

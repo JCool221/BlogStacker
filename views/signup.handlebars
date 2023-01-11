@@ -1,0 +1,20 @@
+<body>
+    <div class="container">
+        <main class="left">
+{{> header }}
+        <div class="form-container">
+
+                <form class="signup-form" action="signup" method="post">
+                    <label for="username">New Username</label>
+                    <input type="text" name="username" id="username">
+                    <label for="email">Signup With Email</label>
+                    <input type="text" name="signupemail" id="email">
+                    <label for="password">Create A Password</label>
+                    <input type="text" name="signuppassword" id="password">
+                </form>
+        </div>
+        </main>
+        <script src="./js/login.js"></script>
+{{> posts }}
+    </div>
+</body>
