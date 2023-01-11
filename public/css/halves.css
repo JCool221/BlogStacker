@@ -77,6 +77,19 @@ h3{
     flex-direction: column;
 }
 
+/* .new-project-form {
+    width: 50%;
+} */
+
+textarea {
+    border-radius: 10%;
+    background-color: var(--smoky-black);
+    color: var(--opera-mauve);
+    height: 100px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--opera-mauve);
+}
+
 .form-container {
     height: 100%;
     display: flex;

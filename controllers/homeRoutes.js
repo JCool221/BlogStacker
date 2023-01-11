@@ -7,8 +7,6 @@ router.get('/', async (req, res) => {
   try {
     // Get all posts and JOIN with user data
     const postData = await Post.findAll({
-      // if posts.length>5find the oldest date and remove it, so how do i do that
-      // syntax is in sequelize, order by min(age) and limit:5
       include: [
         {
           model: User,
