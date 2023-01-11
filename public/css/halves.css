@@ -77,10 +77,9 @@ h3{
     flex-direction: column;
 }
 
-/* .new-project-form {
-    width: 50%;
-} */
-
+.signup-form{
+    height: fit-content;
+}
 textarea {
     border-radius: 10%;
     background-color: var(--smoky-black);
