@@ -16,13 +16,22 @@
     </form>
 </div>
   </main>
+
+    {{#if Posts.length}}
   <main class="right">
     <ul class="post-container">
-      <li class="posts" data-num="1">hello world</li>
+    {{#each Posts as |Post|}}
+      <li class="posts" data-num="{{@index}}">
+        <h2 class="post-title"><a href="/posts/{{Post.id}}">{{Post.title}}</a></h2 >
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{Post.id}}">DELETE</button>
+      </div>
+      </li>
+    {{/each}}
     </ul>
   </main>
-
+    </div>
+{{/if}}
 <script src="./js/profile.js"></script>
 <script src="./js/logout.js"></script>
-  </div>
 </body>

@@ -35,6 +35,13 @@ body {
     text-shadow: 1px 1px 2px var(--orange-soda);
   }
   
+
+  .signup {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-weight: bolder;
+  }
 .container{
     display: flex;
 }    
@@ -87,6 +94,7 @@ textarea {
     height: 100px;
     scrollbar-width: thin;
     scrollbar-color: var(--opera-mauve);
+    font-size: larger;
 }
 
 .form-container {

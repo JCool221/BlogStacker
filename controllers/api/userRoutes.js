@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { User } = require('../../models');
 
 router.post('/', async (req, res) => {
+  console.log('signup route')
   console.log(req)
   try {
     const userData = await User.create(req.body);
@@ -21,7 +22,7 @@ router.post('/login', async (req, res) => {
   console.log('hit route')
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
-console.log(userData)
+
     if (!userData) {
       res
         .status(400)
@@ -30,7 +31,7 @@ console.log(userData)
     }
 
     const validPassword = await userData.checkPassword(req.body.password);
-console.log(validPassword)
+
     if (!validPassword) {
       res
         .status(400)
@@ -43,7 +44,6 @@ console.log(validPassword)
       req.session.logged_in = true;
       
       res.json({ user: userData, message: 'You are now logged in!' });
-      res.redirect('/profile');
     });
 
   } catch (err) {
