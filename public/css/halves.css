@@ -36,9 +36,35 @@ body {
     text-shadow: 1px 1px 2px var(--orange-soda);
   }
   
+
+  .signup {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-weight: bolder;
+  }
 .container{
     display: flex;
 }    
+
+/* full screen for individual posts page */
+.hero-post {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--gold-crayola);
+}
+.post-page-box {
+    height: 50%;
+    width: 75%;
+    display: flex;
+    position: absolute;
+    left: 35px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 1em;
+}
+
 
 /* left side of page */
 .left {
@@ -88,6 +114,7 @@ textarea {
     height: 100px;
     scrollbar-width: thin;
     scrollbar-color: var(--opera-mauve);
+    font-size: larger;
 }
 
 .form-container {

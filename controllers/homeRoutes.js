@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
         },
       ],
       order:[['date_created', 'DESC']],
-      limit: 5,
+      limit: 4,
     });
 
     // Serialize data so the template can read it
@@ -56,6 +56,7 @@ router.get('/profile', withAuth, async (req, res) => {
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [{ model: Post }],
+      limit: 4,
     });
     const user = userData.get({ plain: true });
     res.render('profile', {
@@ -82,7 +83,7 @@ router.get('/login', async (req, res) => {
         },
       ],
       order:[['date_created', 'DESC']],
-      limit: 5,
+      limit: 4,
     });
 
     // Serialize data so the template can read it
@@ -110,7 +111,7 @@ router.get('/signup', async (req, res) => {
         },
       ],
       order:[['date_created', 'DESC']],
-      limit: 5,
+      limit: 4,
     });
 
     // Serialize data so the template can read it
