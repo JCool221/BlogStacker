@@ -10,7 +10,7 @@
     "dev": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Josh Cooley",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
