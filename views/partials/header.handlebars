@@ -1,11 +1,15 @@
 <header class="navbar">
+    <a href="/">
     <h1 class="title">BlogStacker!</h1>
+    </a>
         <nav>
         {{#if logged_in}}
             <a href="/profile">profile</a> |
             <button class="no-button" id="logout">logout</button>
         {{else}}
             <a href="/login">login</a>
+            <span>|</span>
+            <a href="/signup">signup</a> 
         {{/if}}
     </nav>
 </header>
